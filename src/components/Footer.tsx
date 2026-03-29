@@ -25,13 +25,15 @@ const Footer = () => (
         {/* Quick Links - side by side */}
         <div>
           <h4 className="font-heading font-semibold mb-3">Quick Links</h4>
-          <div className="flex flex-wrap gap-x-4 gap-y-2">
+          <ul className="space-y-2">
             {links.map((l) => (
-              <a key={l.href} href={l.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                {l.label}
-              </a>
+              <li key={l.href}>
+                <a href={l.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  {l.label}
+                </a>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
 
         {/* Connect - icons & button side by side */}
