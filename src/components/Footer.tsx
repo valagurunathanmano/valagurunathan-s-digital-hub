@@ -34,7 +34,7 @@ const Footer = () => (
               </li>
             ))}
           </div>
-        </div>
+          </ul>
 
         {/* Connect - icons & button side by side */}
         <div>
