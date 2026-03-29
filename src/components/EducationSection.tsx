@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
 
 const education = [
-  { level: "UG — B.E/B.Tech", school: "P.S.R Engineering College, Sivakasi", pct: "79%" },
-  { level: "HSE — Higher Secondary", school: "S.R Govt Hr Sec School, N.Mettupatti", pct: "62.5%" },
-  { level: "SSLC — Secondary", school: "S.R Govt Hr Sec School, N.Mettupatti", pct: "84.4%" },
+  { level: "B.E — Computer Science & Engineering", school: "P.S.R Engineering College, Sivakasi", year: "2020 – 2024", pct: "79%" },
+  { level: "Higher Secondary", school: "S.R Govt Hr Sec School, N.Mettupatti", year: "2019 – 2020", pct: "62.5%" },
+  { level: "Secondary (SSLC)", school: "S.R Govt Hr Sec School, N.Mettupatti", year: "2017 – 2018", pct: "84.4%" },
 ];
 
 const EducationSection = () => (
@@ -34,6 +34,7 @@ const EducationSection = () => (
             <div className="flex-1">
               <h3 className="font-heading font-semibold text-lg">{e.level}</h3>
               <p className="text-muted-foreground text-sm mt-1">{e.school}</p>
+              <p className="text-muted-foreground text-xs mt-0.5">{e.year}</p>
             </div>
             <span className="font-heading font-bold text-xl gradient-text shrink-0">{e.pct}</span>
           </motion.div>

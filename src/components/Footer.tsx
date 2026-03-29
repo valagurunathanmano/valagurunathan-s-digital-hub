@@ -22,45 +22,46 @@ const Footer = () => (
         </div>
         <div>
           <h4 className="font-heading font-semibold mb-3">Quick Links</h4>
-          <ul className="space-y-2">
+          <div className="flex flex-wrap gap-x-4 gap-y-2">
             {links.map((l) => (
-              <li key={l.href}>
-                <a href={l.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  {l.label}
-                </a>
-              </li>
+              <a key={l.href} href={l.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                {l.label}
+              </a>
             ))}
-          </ul>
+          </div>
         </div>
         <div>
           <h4 className="font-heading font-semibold mb-3">Let's Connect</h4>
-          <div className="space-y-3">
+          <div className="flex items-center gap-4 mb-4">
             <a
               href="mailto:Valagurunathanmano@gmail.com"
-              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Email"
             >
-              <Mail size={16} /> Valagurunathanmano@gmail.com
+              <Mail size={18} />
             </a>
             <a
               href="https://www.linkedin.com/in/valagurunathan"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="LinkedIn"
             >
-              <Linkedin size={16} /> LinkedIn
+              <Linkedin size={18} />
             </a>
             <a
               href="https://github.com/valagurunathanmano"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="GitHub"
             >
-              <Github size={16} /> GitHub
+              <Github size={18} />
             </a>
           </div>
           <a
             href="mailto:Valagurunathanmano@gmail.com"
-            className="mt-5 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-heading font-semibold text-sm hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-heading font-semibold text-sm hover:opacity-90 transition-opacity"
           >
             <Mail size={15} /> Let's Connect
           </a>
