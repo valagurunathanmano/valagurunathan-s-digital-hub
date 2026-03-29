@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
-import { Award } from "lucide-react";
+import { Award, ExternalLink } from "lucide-react";
 
 const certs = [
-  { title: "Introduction to Digital Marketing Fundamentals", issuer: "Simplilearn", date: "Oct 2025" },
-  { title: "Introduction to SEO", issuer: "Simplilearn", date: "Oct 2025" },
+  { title: "Introduction to Digital Marketing Fundamentals", issuer: "Simplilearn", date: "Oct 2025", link: "" },
+  { title: "Introduction to SEO", issuer: "Simplilearn", date: "Oct 2025", link: "" },
+  { title: "Coming Soon", issuer: "—", date: "—", link: "" },
+  { title: "Coming Soon", issuer: "—", date: "—", link: "" },
 ];
 
 const CertificatesSection = () => (
@@ -18,22 +20,35 @@ const CertificatesSection = () => (
         <span className="gradient-text">Certifications</span>
       </motion.h2>
       <div className="grid sm:grid-cols-2 gap-6">
-        {certs.map((c, i) => (
-          <motion.div
-            key={c.title}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.15 }}
-            className="card-gradient border border-border rounded-xl p-6"
-          >
-            <div className="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-              <Award className="text-primary" size={20} />
-            </div>
-            <h3 className="font-heading font-semibold mb-1">{c.title}</h3>
-            <p className="text-muted-foreground text-sm">{c.issuer} • {c.date}</p>
-          </motion.div>
-        ))}
+        {certs.map((c, i) => {
+          const Wrapper = c.link ? "a" : "div";
+          const wrapperProps = c.link
+            ? { href: c.link, target: "_blank", rel: "noopener noreferrer" }
+            : {};
+          return (
+            <motion.div
+              key={`${c.title}-${i}`}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.15 }}
+            >
+              <Wrapper
+                {...(wrapperProps as any)}
+                className={`card-gradient border border-border rounded-xl p-6 block ${c.link ? "hover:border-primary/50 transition-colors cursor-pointer" : ""}`}
+              >
+                <div className="flex items-start justify-between">
+                  <div className="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Award className="text-primary" size={20} />
+                  </div>
+                  {c.link && <ExternalLink className="text-muted-foreground" size={16} />}
+                </div>
+                <h3 className="font-heading font-semibold mb-1">{c.title}</h3>
+                <p className="text-muted-foreground text-sm">{c.issuer} • {c.date}</p>
+              </Wrapper>
+            </motion.div>
+          );
+        })}
       </div>
     </div>
   </section>
