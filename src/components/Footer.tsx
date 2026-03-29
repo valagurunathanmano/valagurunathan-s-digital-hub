@@ -33,7 +33,6 @@ const Footer = () => (
                 </a>
               </li>
             ))}
-          </div>
           </ul>
 
         {/* Connect - icons & button side by side */}
