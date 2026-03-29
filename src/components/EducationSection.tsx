@@ -3,8 +3,8 @@ import { GraduationCap } from "lucide-react";
 
 const education = [
   { level: "B.E — Computer Science & Engineering", school: "P.S.R Engineering College, Sivakasi", year: "2020 – 2024", pct: "79%" },
-  { level: "Higher Secondary", school: "S.R Govt Hr Sec School, N.Mettupatti", year: "2019 – 2020", pct: "62.5%" },
-  { level: "Secondary (SSLC)", school: "S.R Govt Hr Sec School, N.Mettupatti", year: "2017 – 2018", pct: "84.4%" },
+  { level: "HSE", school: "S.R Govt Hr Sec School, N.Mettupatti", year: "2019 – 2020", pct: "62.5%" },
+  { level: "SSLC", school: "S.R Govt Hr Sec School, N.Mettupatti", year: "2017 – 2018", pct: "84.4%" },
 ];
 
 const EducationSection = () => (
