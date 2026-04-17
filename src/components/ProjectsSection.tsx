@@ -5,12 +5,10 @@ const projects = [
   {
     title: "Keyword Research Case Study",
     desc: "Developed a structured SEO keyword strategy by combining manual research, search intent classification, clustering, and data validation, supported by a documented strategy summary.",
-    Link:"https://docs.google.com/spreadsheets/d/1bHM9BczQP4sLIzxBayR8bCRsOWFpfqpNIJQ6AjU5nyg/edit?usp=sharing",
   },
   {
     title: "SEO Optimised Blog Article Case Study",
     desc: "Built a complete SEO blog project from keyword research to optimized content creation, including on-page SEO, internal linking, and a documented case study",
-    Link:"",
   },
 ];
 
