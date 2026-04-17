@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { Award, ExternalLink } from "lucide-react";
 
 const certs = [
-  { title: "Introduction to Digital Marketing Fundamentals", issuer: "Simplilearn", date: "Oct 2025", link: "" },
-  { title: "Introduction to SEO", issuer: "Simplilearn", date: "Oct 2025", link: "" },
-  { title: "Coming Soon", issuer: "—", date: "—", link: "" },
+  { title: "Introduction to Digital Marketing Fundamentals", issuer: "Simplilearn", date: "Oct 2025", link: "https://drive.google.com/file/d/1d961425o776TPUcBT0An6lhPU3zxoq3n/view?usp=sharing" },
+  { title: "Introduction to SEO", issuer: "Simplilearn", date: "Oct 2025", link: "https://drive.google.com/file/d/16lY33RoaFqSb_BLfPNS7rr30KzDFqlCa/view?usp=sharing" },
+  { title: "Introduction to MS Excel", issuer: "Simplilearn", date: "Oct 2025", link: "https://drive.google.com/file/d/1omwYiuCHL1LUZcB27Ah6YJDhQdd7UvRg/view?usp=sharing" },
   { title: "Coming Soon", issuer: "—", date: "—", link: "" },
 ];
 
