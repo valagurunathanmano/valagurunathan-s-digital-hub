@@ -3,12 +3,12 @@ import { FolderOpen } from "lucide-react";
 
 const projects = [
   {
-    title: "Project Coming Soon",
-    desc: "A comprehensive SEO audit & optimization case study — details will be added soon.",
+    title: "Keyword Research Case Study",
+    desc: "Developed a structured SEO keyword strategy by combining manual research, search intent classification, clustering, and data validation, supported by a documented strategy summary.",
   },
   {
-    title: "Project Coming Soon",
-    desc: "A social media marketing campaign analysis with measurable KPIs — coming soon.",
+    title: "SEO Optimised Blog Article Case Study",
+    desc: "Built a complete SEO blog project from keyword research to optimized content creation, including on-page SEO, internal linking, and a documented case study",
   },
 ];
 
