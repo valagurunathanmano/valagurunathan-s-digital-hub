@@ -1,14 +1,16 @@
 import { motion } from "framer-motion";
-import { FolderOpen } from "lucide-react";
+import { FolderOpen, ExternalLink } from "lucide-react";
 
 const projects = [
   {
     title: "Keyword Research Case Study",
     desc: "Developed a structured SEO keyword strategy by combining manual research, search intent classification, clustering, and data validation, supported by a documented strategy summary.",
+    link: "https://docs.google.com/spreadsheets/d/your-sheet-id", // replace with your sheet URL
   },
   {
     title: "SEO Optimised Blog Article Case Study",
-    desc: "Built a complete SEO blog project from keyword research to optimized content creation, including on-page SEO, internal linking, and a documented case study",
+    desc: "Built a complete SEO blog project from keyword research to optimized content creation, including on-page SEO, internal linking, and a documented case study.",
+    link: "https://your-blog-link.com", // replace with your case study URL
   },
 ];
 
@@ -25,20 +27,27 @@ const ProjectsSection = () => (
       </motion.h2>
       <div className="grid sm:grid-cols-2 gap-6">
         {projects.map((p, i) => (
-          <motion.div
+          <motion.a
             key={i}
+            href={p.link}
+            target="_blank"
+            rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.15 }}
-            className="card-gradient border border-border rounded-xl p-8 flex flex-col items-center text-center border-dashed"
+            whileHover={{ y: -4 }}
+            className="card-gradient border border-border rounded-xl p-8 flex flex-col items-center text-center border-dashed group hover:border-primary/50 transition-colors"
           >
             <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-5">
               <FolderOpen className="text-primary" size={24} />
             </div>
             <h3 className="font-heading font-semibold text-lg mb-2">{p.title}</h3>
-            <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
-          </motion.div>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-4">{p.desc}</p>
+            <span className="inline-flex items-center gap-1.5 text-sm text-primary font-medium mt-auto group-hover:gap-2 transition-all">
+              View Project <ExternalLink size={14} />
+            </span>
+          </motion.a>
         ))}
       </div>
     </div>
