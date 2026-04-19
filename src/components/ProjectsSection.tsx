@@ -9,7 +9,7 @@ const projects = [
   },
   {
     title: "Food Ordering Website",
-    desc: "Built a complete SEO blog project from keyword research to optimized content creation, including on-page SEO, internal linking, and a documented case study.",
+    desc: "Responsive food ordering website built with HTML & CSS — includes menu, testimonials, and contact form. Live on Netlify.",
     link: "https://foodorderapps.netlify.app/", // replace with your case study URL
   },
 ];
