@@ -8,9 +8,9 @@ const projects = [
     link: "https://docs.google.com/spreadsheets/d/1bHM9BczQP4sLIzxBayR8bCRsOWFpfqpNIJQ6AjU5nyg/edit?usp=sharing", // replace with your sheet URL
   },
   {
-    title: "SEO Optimised Blog Article Case Study",
+    title: "Food Ordering Website",
     desc: "Built a complete SEO blog project from keyword research to optimized content creation, including on-page SEO, internal linking, and a documented case study.",
-    link: "https://your-blog-link.com", // replace with your case study URL
+    link: "https://foodorderapps.netlify.app/", // replace with your case study URL
   },
 ];
 
