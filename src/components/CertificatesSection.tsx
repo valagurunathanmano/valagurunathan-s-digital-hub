@@ -5,7 +5,7 @@ const certs = [
   { title: "Introduction to Digital Marketing Fundamentals", issuer: "Simplilearn", date: "Oct 2025", link: "https://drive.google.com/file/d/1d961425o776TPUcBT0An6lhPU3zxoq3n/view?usp=sharing" },
   { title: "Introduction to SEO", issuer: "Simplilearn", date: "Oct 2025", link: "https://drive.google.com/file/d/16lY33RoaFqSb_BLfPNS7rr30KzDFqlCa/view?usp=sharing" },
   { title: "Introduction to MS Excel", issuer: "Simplilearn", date: "Oct 2025", link: "https://drive.google.com/file/d/1omwYiuCHL1LUZcB27Ah6YJDhQdd7UvRg/view?usp=sharing" },
-  { title: "Coming Soon", issuer: "—", date: "—", link: "" },
+  { title: "Digital Marketing Course", issuer: "SUNDAR DMT", date: "Aug 2026", link: "https://drive.google.com/file/d/1xSo51YNlAj72_MUnML30pITm4pVRTzlf/view?usp=drive_link" },
 ];
 
 const CertificatesSection = () => (
